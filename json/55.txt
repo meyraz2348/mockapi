@@ -1,0 +1,18 @@
+{
+  "name": "$company.companyName",
+  "branches": [
+    {
+      "streetName": "$address.streetAddress",
+      "suburb": "$address.cityName",
+      "vehicles": [
+        {
+          "vehicleName": "$vehicle.vehicle",
+          "vehicleManufacturer": "$vehicle.manufacturer",
+          "vehicleModel": "$vehicle.model",
+          "vehicleType": "$vehicle.type",
+          "vehicleColor": "$vehicle.color"
+        }
+      ]
+    }
+  ]
+}

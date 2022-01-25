@@ -1,30 +1,151 @@
-button {
-  margin: 0.5rem 0.02rem;
+body {
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  background: linear-gradient(
+      to left,
+      rgba(230, 115, 70, 0.75),
+      rgba(9, 40, 44, 0.5)
+    ),
+    url('./images/pexels-photo-4489719.jpeg') no-repeat center center/cover;
+  overflow: hidden;
+  position: relative;
 }
+.detailsDiv {
+  position: relative;
+}
+.image {
+  position: relative;
+  position: absolute;
+  height: 30rem;
+  width: 50rem;
+  padding: 5px;
+  margin: auto 1rem;
+  margin-bottom: 1rem;
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  border-radius: 0.75rem;
+  object-fit: cover;
+  cursor: pointer;
+  transform: translateX(calc(50%));
+}
+
 table {
+  font-family: 'Times New Roman', Times, serif;
+  display: grid;
+  width: 100vw;
+  place-items: center;
+  max-height: 800px;
+  margin: 4px auto;
+  padding: 15px;
   border-collapse: collapse;
-  border-spacing: 0;
-  width: 40%;
-  border: 1px solid black;
-}
-h2 {
-  margin-bottom: 0.01rem;
-  font-weight: lighter;
-}
-thead {
-  max-width: 600px;
-  background-color: #f2f2f2;
-  font-weight: bold;
-  border: 1px solid black;
-  text-align: center;
 }
 th,
 td {
   text-align: center;
-  padding: 16px;
-  align-items: center;
+  border: 1px solid black;
+  width: 30vw;
+  padding: 8px;
 }
 tr:nth-child(even) {
-  /* border-left: 1px solid black; */
-  background-color: #f2f2f2;
+  background-color: #ebd1d1;
+}
+.companyName {
+  cursor: pointer;
+}
+a {
+  color: black;
+}
+a:link {
+  text-decoration: none;
+}
+button {
+  cursor: pointer;
+  border: 2px solid black;
+  border-radius: 0.8rem;
+}
+button:hover {
+  background-color: coral;
+  transition: all 0.5s ease-in-out;
+}
+.backButton {
+  display: grid;
+  position: absolute;
+  padding: 4px 6px;
+  font-size: 1rem;
+  bottom: -255%;
+  left: 35%;
+  margin: auto 2rem;
+  margin-top: 0.75rem;
+  border: 1px solid black;
+}
+.backButton:hover {
+  border-radius: 0.7rem;
+  transition: all 0.5s linear;
+  background-color: rgb(233, 76, 84);
+}
+.show-btn {
+  display: none;
+}
+.companyName:hover {
+  background-color: rgb(246, 250, 246);
+  transition: all 0.8s linear;
+}
+.addToCenter {
+  text-align: center;
+}
+.loading {
+  min-height: 100vh;
+  display: grid;
+  justify-content: center;
+  position: absolute;
+  top: 23%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--clr-grey-10);
+  padding-top: 5rem;
+  z-index: 1;
+}
+.hideLoading {
+  display: none;
+}
+.vehicleData {
+  position: relative;
+  height: 50px;
+  max-width: 770px;
+  top: 65%;
+  transform: translateX(calc(56%));
+}
+.vehicleInformation {
+  display: grid;
+  text-align: left;
+  font-size: 2.5rem;
+  font-weight: bold;
+  padding: 2px;
+  margin-left: 2.5rem;
+  margin-top: 1rem;
+  text-transform: uppercase;
+}
+.listDataElement {
+  display: grid;
+  height: 55px;
+  max-width: 770px;
+  top: 73%;
+  left: 27%;
+}
+.list1 {
+  display: grid;
+  margin-top: -1rem;
+  position: absolute;
+  font-size: 1.7rem;
+  left: 3%;
+}
+.list2 {
+  display: grid;
+  position: absolute;
+  top: 180%;
+  left: 66%;
+  font-size: 1.7rem;
 }
