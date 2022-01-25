@@ -12,26 +12,27 @@ body {
   position: relative;
 }
 .detailsDiv {
+  display: grid;
   position: relative;
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
+  border: 1px solid;
+  height: 40vh;
+  max-width: 60vh;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%);
+  overflow: hidden;
+  box-sizing: border-box;
 }
 .image {
-  position: relative;
-  position: absolute;
-  height: 30rem;
-  width: 50rem;
-  padding: 5px;
-  margin: auto 1rem;
-  margin-bottom: 1rem;
-  margin-top: 2rem;
-  display: grid;
-  grid-template-columns: 1fr;
-  border-radius: 0.75rem;
-  object-fit: cover;
+  height: 40vh;
+  width: 100%;
   cursor: pointer;
-  transform: translateX(calc(50%));
 }
-
+.detailsDiv:hover .image {
+  transition: all 2s linear;
+  transform: scale(1.5);
+}
 table {
   font-family: 'Times New Roman', Times, serif;
   display: grid;
@@ -75,13 +76,13 @@ button:hover {
   position: absolute;
   padding: 4px 6px;
   font-size: 1rem;
-  top: 35%;
-  left: 35%;
-  margin: auto 2rem;
-  margin-top: 0.75rem;
+  bottom: 25%;
+  left: 50%;
+  transform: translate(-50%);
   border: 1px solid black;
 }
 .backButton:hover {
+  cursor: pointer;
   border-radius: 0.7rem;
   transition: all 0.5s linear;
   background-color: rgb(233, 76, 84);
@@ -114,45 +115,46 @@ button:hover {
 }
 .vehicleData {
   position: relative;
-  margin-top: 4rem;
-  height: 140px;
-  max-width: 770px;
-  top: 70%;
-  transform: translateX(calc(56%));
+  position: absolute;
+  margin: 0rem auto;
+  height: 25vh;
+  width: 28vw;
+  top: 55%;
+  left: 50%;
+  transform: translateX(-50%);
+  overflow: hidden;
+  /* border: 1px solid red; */
 }
 .vehicleInformation {
   display: grid;
-  text-align: left;
+  height: 5vh;
+  width: 95%;
   font-size: 2rem;
   font-weight: bold;
-  padding: 2px;
-  margin-left: 2.5rem;
-  margin-top: 1rem;
   text-transform: uppercase;
 }
 .listDataElement {
+  position: relative;
+  position: absolute;
   display: grid;
-  height: 55px;
-  max-width: 770px;
-  top: 73%;
-  left: 27%;
+  height: 15vh;
+  width: 30vw;
+  left: 50%;
+  transform: translate(-50%);
 }
 .list1 {
   display: grid;
-  margin-top: -1rem;
   position: absolute;
   font-size: 1.25rem;
   font-style: italic;
   font-weight: bold;
-  top: 45%;
-  left: 3%;
 }
 .list2 {
   display: grid;
+  position: absolute;
   font-weight: bold;
   font-style: italic;
   position: absolute;
-  top: 18%;
-  left: 66%;
   font-size: 1.25rem;
+  left: 70%;
 }
