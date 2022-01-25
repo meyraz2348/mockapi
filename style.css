@@ -9,30 +9,8 @@ body {
     ),
     url('./images/pexels-photo-4489719.jpeg') no-repeat center center/cover;
   overflow: hidden;
-  position: relative;
 }
-.detailsDiv {
-  display: grid;
-  position: relative;
-  margin-bottom: 2rem;
-  border: 1px solid;
-  height: 40vh;
-  max-width: 60vh;
-  top: 10%;
-  left: 50%;
-  transform: translate(-50%);
-  overflow: hidden;
-  box-sizing: border-box;
-}
-.image {
-  height: 40vh;
-  width: 100%;
-  cursor: pointer;
-}
-.detailsDiv:hover .image {
-  transition: all 2s linear;
-  transform: scale(1.5);
-}
+
 table {
   font-family: 'Times New Roman', Times, serif;
   display: grid;
@@ -76,7 +54,7 @@ button:hover {
   position: absolute;
   padding: 4px 6px;
   font-size: 1rem;
-  bottom: 25%;
+  bottom: 20%;
   left: 50%;
   transform: translate(-50%);
   border: 1px solid black;
@@ -113,38 +91,60 @@ button:hover {
 .hideLoading {
   display: none;
 }
-.vehicleData {
+.section {
   position: relative;
-  position: absolute;
-  margin: 0rem auto;
-  height: 25vh;
-  width: 28vw;
-  top: 55%;
-  left: 50%;
-  transform: translateX(-50%);
+  min-height: 100vh;
+  /* margin: 4rem; */
+  margin-top: 0.75rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+  justify-items: center;
+}
+
+.detailsDiv {
+  display: grid;
+  position: relative;
+  margin: 2rem;
+  border: 1px solid black;
+  height: 45vh;
+  max-width: 80vh;
+  top: 10%;
   overflow: hidden;
-  /* border: 1px solid red; */
+  box-sizing: border-box;
+}
+.image {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  cursor: pointer;
+}
+.detailsDiv:hover .image {
+  transition: all 2s linear;
+  transform: scale(1.5);
+}
+.vehicleData {
+  display: grid;
+  position: relative;
+  height: 35vh;
+  max-width: 75vw;
+  margin: 2rem;
+  top: 10%;
+  box-sizing: border-box;
 }
 .vehicleInformation {
   display: grid;
-  height: 5vh;
-  width: 95%;
-  font-size: 2rem;
+  height: 100%;
+  width: 100%;
+  font-size: 1.75rem;
   font-weight: bold;
   text-transform: uppercase;
-}
-.listDataElement {
-  position: relative;
-  position: absolute;
-  display: grid;
-  height: 15vh;
-  width: 30vw;
-  left: 50%;
-  transform: translate(-50%);
 }
 .list1 {
   display: grid;
   position: absolute;
+  width: 25%;
+  top: 35%;
+  left: -2%;
   font-size: 1.25rem;
   font-style: italic;
   font-weight: bold;
@@ -154,7 +154,9 @@ button:hover {
   position: absolute;
   font-weight: bold;
   font-style: italic;
+  width: 50%;
+  top: 35%;
   position: absolute;
   font-size: 1.25rem;
-  left: 70%;
+  left: 57%;
 }
