@@ -74,7 +74,7 @@ button:hover {
   position: absolute;
   padding: 4px 6px;
   font-size: 1rem;
-  top: 85%;
+  top: 35%;
   left: 35%;
   margin: auto 2rem;
   margin-top: 0.75rem;
@@ -113,9 +113,10 @@ button:hover {
 }
 .vehicleData {
   position: relative;
-  height: 50px;
+  margin-top: 2rem;
+  height: 140px;
   max-width: 770px;
-  top: 65%;
+  top: 70%;
   transform: translateX(calc(56%));
 }
 .vehicleInformation {
@@ -147,7 +148,7 @@ button:hover {
   display: grid;
   font-weight: bold;
   position: absolute;
-  top: 55%;
+  top: 18%;
   left: 66%;
   font-size: 1rem;
 }
