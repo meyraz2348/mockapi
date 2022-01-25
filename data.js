@@ -30,7 +30,7 @@ const addToDOM = (vehicles) => {
   imageElement.src =
     'https://images.pexels.com/photos/3065602/pexels-photo-3065602.jpeg?cs=srgb&dl=pexels-kelly-l-3065602.jpg&fm=jpg'
   element.append(imageElement)
-  vehicleDataElement.append(divElement)
+  vehicleDataElement.insert(divElement)
   divElement.innerHTML = `<p class = "vehicleInformation"> 2015 ${vehicles[0].vehicleName}  ${vehicles[0].vehicleColor} auto 4WD</p>
   `
   vehicleDataElement.append(divElement2)
