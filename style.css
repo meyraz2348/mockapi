@@ -13,6 +13,7 @@ body {
 }
 .detailsDiv {
   position: relative;
+  margin-bottom: 2rem;
 }
 .image {
   position: relative;
