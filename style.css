@@ -13,7 +13,7 @@ body {
 }
 .detailsDiv {
   position: relative;
-  margin-bottom: 2rem;
+  margin-bottom: 4rem;
 }
 .image {
   position: relative;
@@ -142,12 +142,15 @@ button:hover {
   margin-top: -1rem;
   position: absolute;
   font-size: 1.25rem;
+  font-style: italic;
   font-weight: bold;
+  top: 45%;
   left: 3%;
 }
 .list2 {
   display: grid;
   font-weight: bold;
+  font-style: italic;
   position: absolute;
   top: 18%;
   left: 66%;
